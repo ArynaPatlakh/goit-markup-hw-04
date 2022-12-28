@@ -7,24 +7,14 @@
   --accent-color: #4d5ae5;
 }
 
+/* Незмінні частини сторінок та основні властивості */
+
 .container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-/* Незмінні частини сторінок та основні властивості */
 
 body {
   color: var(--title-text-color);
@@ -47,6 +37,16 @@ ol {
 
 img {
   display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 .visually-hidden {
