@@ -146,11 +146,19 @@ h6 {
   color: var(--accent-color);
 }
 
-/* Footer */
+/* --------------------------------Footer-------------------- */
 .footer {
+  display: flex;
+
   background-color: var(--title-text-color);
+
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-section {
+  display: flex;
+  align-items: start; 
 }
 
 .footer > .logo {
@@ -161,7 +169,55 @@ h6 {
   color: var(--footer-text-color);
   font-size: 16px;
   line-height: 1.5;
+
   max-width: 264px;
+}
+
+.footer-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color);
+
+margin-bottom: 16px;
+}
+
+/* ---------------------FOOTER-ICON----------------- */
+
+.footer-div-icon {
+  padding-left: 120px;
+
+  height: 80px;
+}
+
+.footer-list {
+  display: flex;
+  width: 208px;
+  height: 40px;
+  gap: 16px;
+}
+
+.footer-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+  .footer-item-link:hover,
+  .footer-item-link:focus {
+    background-color: #31D0AA;
+  }
+
+.footer-item-icon {
+  width: 24px;
+  height: 24px;
 }
 
 /* PRIMARY PAGE */
@@ -460,19 +516,16 @@ h6 {
 
 .item-link-icon:hover,
 .item-link-icon:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
-
-
 
 /* ----------------------------------------CUSTOMERS------------------------ */
 
 .cust {
-  /* display: flex; */
-
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .cust-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -486,16 +539,47 @@ h6 {
 
 .cust-list {
   display: flex;
+
+  gap: 24px;
 }
-/* 
-.cust-item {
+
+.cist-item {
+  display: flex;
 }
 
 .cust-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 168px;
+  height: 88px;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
+.cust-link:hover,
+.cust-link:focus {
+  border: 1px solid #404bbf;
+  border-radius: 4px;
+}
+
+.cust-item:hover {
+  fill: #404bbf
+}
+
+.cust-icon:hover,
+.cust-icon:focus {
+  fill: #404bbf;
+}
+
+/* fill="#8e8f99"  
+style="fill:var(--color1, #8e8f99)"*/
+
 .cust-icon {
-} */
+  fill: #8e8f99;
+}
 
 /* --------------------------PORTFOLIO ---------------------------------------*/
 
@@ -504,6 +588,7 @@ h6 {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 /* --------------------------------------------Menu ------------------------*/
 
 .menu {
@@ -557,6 +642,13 @@ h6 {
 .card-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+.card-item:hover,
+.card-item:focus {
+  
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .card-div {
   padding-top: 32px;
   padding-bottom: 32px;
