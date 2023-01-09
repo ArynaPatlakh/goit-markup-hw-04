@@ -53,6 +53,9 @@ h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -159,7 +162,7 @@ h6 {
   padding-bottom: 100px;
 }
 
-.footer-section {
+.footer-div {
   display: flex;
   align-items: start;
 }
@@ -174,6 +177,7 @@ h6 {
   line-height: 1.5;
 
   max-width: 264px;
+  margin-top: 16px;
 }
 
 .footer-title {
@@ -185,19 +189,29 @@ h6 {
 
   margin-bottom: 16px;
 }
+/* ---------------------FOOTER-ICON-PORTFOLIO----------------- */
 
-/* ---------------------FOOTER-ICON----------------- */
+.footer-title {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
-.footer-div-icon {
-  padding-left: 120px;
+  /* width: 96px;
+height: 24px; */
+}
 
-  height: 80px;
+.footer-div {
+  display: flex;
+}
+
+.footer-div1 {
+  padding-right: 120px;
 }
 
 .footer-list {
   display: flex;
-  width: 208px;
-  height: 40px;
   gap: 16px;
 }
 
@@ -206,21 +220,16 @@ h6 {
   justify-content: center;
   align-items: center;
 
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
   width: 40px;
   height: 40px;
-
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
 }
 
 .footer-item-link:hover,
 .footer-item-link:focus {
   background-color: #31d0aa;
-}
-
-.footer-item-icon {
-  width: 24px;
-  height: 24px;
 }
 
 /* PRIMARY PAGE */
@@ -455,7 +464,7 @@ h6 {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .team-list {
@@ -492,7 +501,7 @@ h6 {
 .icon-div-team {
   display: flex;
 
-justify-content: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -541,10 +550,7 @@ justify-content: center;
   gap: 24px;
 }
 
-
-
-
-/* -----------------------CUSTUMERS------------------------ */
+/* -----------------------ICON-CUSTUMERS------------------------ */
 
 .cist-item {
   display: flex;
@@ -552,6 +558,7 @@ justify-content: center;
 
 .cust-link {
   fill: #8e8f99;
+  color: #8e8f99;
 
   display: flex;
   justify-content: center;
@@ -565,13 +572,13 @@ justify-content: center;
 }
 
 .cust-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .cust-link:hover,
 .cust-link:focus {
   border: 1px solid #404bbf;
-  fill: #404bbf;
+  color: #404bbf;
 }
 
 /* .cust-item:hover,
@@ -584,7 +591,6 @@ justify-content: center;
   fill: #404bbf;
 } */
 
-
 /* --------------------------PORTFOLIO ---------------------------------------*/
 
 /* --------------------------------------------Menu ------------------------*/
@@ -595,8 +601,6 @@ justify-content: center;
 }
 
 .filter {
-
-
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -625,11 +629,12 @@ justify-content: center;
 .filter-button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid transparent;
 }
 
-/* ------------------Card--------------------------------- */
+/* ------------------CARD--------------------------------- */
 
 .card {
   display: flex;
@@ -639,12 +644,13 @@ justify-content: center;
   column-gap: 24px;
 }
 
-.card-item {
+.card-link {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.card-item:hover,
-.card-item:focus {
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -653,9 +659,12 @@ justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+
   border-left: 0.5px solid #f4f4fd;
   border-right: 0.5px solid #f4f4fd;
   border-bottom: 0.5px solid #f4f4fd;
+
+  text-decoration: none;
 }
 
 .card-title {
@@ -672,8 +681,4 @@ justify-content: center;
 
   font-size: 16px;
   line-height: 1.5;
-}
-
-.card-link {
-  text-decoration: none;
 }
