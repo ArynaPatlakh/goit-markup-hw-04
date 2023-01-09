@@ -27,6 +27,9 @@ body {
 
 .header {
   background-color: var(--secondary-text-color);
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 ul,
@@ -158,7 +161,7 @@ h6 {
 
 .footer-section {
   display: flex;
-  align-items: start; 
+  align-items: start;
 }
 
 .footer > .logo {
@@ -174,13 +177,13 @@ h6 {
 }
 
 .footer-title {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 /* ---------------------FOOTER-ICON----------------- */
@@ -210,10 +213,10 @@ margin-bottom: 16px;
   border-radius: 50%;
 }
 
-  .footer-item-link:hover,
-  .footer-item-link:focus {
-    background-color: #31D0AA;
-  }
+.footer-item-link:hover,
+.footer-item-link:focus {
+  background-color: #31d0aa;
+}
 
 .footer-item-icon {
   width: 24px;
@@ -229,12 +232,10 @@ margin-bottom: 16px;
   padding-bottom: 192px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #000000;
+  text-align: center;
 
   max-width: 1440px;
   min-height: 600px;
-
-  text-align: center;
 
   background-color: var(--title-text-color);
   background-image: linear-gradient(
@@ -261,12 +262,7 @@ margin-bottom: 16px;
 }
 
 .hero-button {
-  background-color: var(--accent-color);
   color: var(--secondary-text-color);
-
-  border: 1px solid transparent;
-  cursor: pointer;
-
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -275,6 +271,11 @@ margin-bottom: 16px;
   align-items: center;
   text-align: center;
 
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
   min-width: 168px;
   height: 51px;
@@ -295,6 +296,7 @@ margin-bottom: 16px;
 
 .about-list {
   display: flex;
+
   gap: 24px;
 }
 
@@ -307,6 +309,7 @@ margin-bottom: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
+
   margin-bottom: 8px;
 }
 
@@ -319,18 +322,16 @@ margin-bottom: 16px;
 /* ---------ABOUT-ICON------------- */
 
 .about-icon {
+  background-color: var(--exception-color);
+
   display: flex;
-  content: "";
   justify-content: center;
   align-items: center;
 
-  width: 264px;
   height: 112px;
 
   margin-bottom: 8px;
   border-radius: 4px;
-
-  background-color: var(--exception-color);
 }
 
 /* .icon-antenna::before {
@@ -452,10 +453,9 @@ margin-bottom: 16px;
 .team-item {
   background-color: var(--secondary-text-color);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 32px;
-
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    padding-bottom: 32px;
 }
 
 .team-list {
@@ -492,8 +492,7 @@ margin-bottom: 16px;
 .icon-div-team {
   display: flex;
 
-  margin: auto;
-  width: 232px;
+justify-content: center;
   gap: 24px;
 }
 
@@ -530,7 +529,6 @@ margin-bottom: 16px;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.11;
-
   text-align: center;
   letter-spacing: 0.02em;
 
@@ -543,11 +541,18 @@ margin-bottom: 16px;
   gap: 24px;
 }
 
+
+
+
+/* -----------------------CUSTUMERS------------------------ */
+
 .cist-item {
   display: flex;
 }
 
 .cust-link {
+  fill: #8e8f99;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -559,35 +564,28 @@ margin-bottom: 16px;
   border-radius: 4px;
 }
 
+.cust-icon {
+  fill: #8e8f99;
+}
+
 .cust-link:hover,
 .cust-link:focus {
   border: 1px solid #404bbf;
-  border-radius: 4px;
+  fill: #404bbf;
 }
 
-.cust-item:hover {
-  fill: #404bbf
+/* .cust-item:hover,
+.cust-item:focus {
+  fill: #404bbf;
 }
 
 .cust-icon:hover,
 .cust-icon:focus {
   fill: #404bbf;
-}
+} */
 
-/* fill="#8e8f99"  
-style="fill:var(--color1, #8e8f99)"*/
-
-.cust-icon {
-  fill: #8e8f99;
-}
 
 /* --------------------------PORTFOLIO ---------------------------------------*/
-
-.portfolio-header {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
 
 /* --------------------------------------------Menu ------------------------*/
 
@@ -597,27 +595,28 @@ style="fill:var(--color1, #8e8f99)"*/
 }
 
 .filter {
-  margin-bottom: 72px;
+
 
   display: flex;
   gap: 24px;
   justify-content: center;
+
+  margin-bottom: 72px;
 }
 
 .filter-button {
   color: var(--accent-color);
-  background-color: var(--exception-color);
-
-  cursor: pointer;
-  text-align: center;
-  border-radius: 4px;
-  border: 1px solid #e7e9fc;
-
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  background-color: var(--exception-color);
 
   padding: 12px 24px;
 }
@@ -626,6 +625,7 @@ style="fill:var(--color1, #8e8f99)"*/
 .filter-button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+
   border: 1px solid transparent;
 }
 
@@ -645,8 +645,8 @@ style="fill:var(--color1, #8e8f99)"*/
 
 .card-item:hover,
 .card-item:focus {
-  
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-div {
@@ -660,7 +660,6 @@ style="fill:var(--color1, #8e8f99)"*/
 
 .card-title {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
