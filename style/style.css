@@ -93,6 +93,7 @@ a {
 
 .logo-studio-footer {
   color: var(--exception-color);
+  margin-right: 0;
 }
 
 /* Nav */
@@ -189,7 +190,6 @@ a {
 
   margin-bottom: 16px;
 }
-/* ---------------------FOOTER-ICON-PORTFOLIO----------------- */
 
 .footer-title {
   color: var(--secondary-text-color);
@@ -197,17 +197,15 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  /* width: 96px;
-height: 24px; */
 }
+/* ---------------------FOOTER-ICON-PORTFOLIO----------------- */
 
 .footer-div {
   display: flex;
 }
 
 .footer-div1 {
-  padding-right: 120px;
+  margin-right: 120px;
 }
 
 .footer-list {
@@ -244,7 +242,6 @@ height: 24px; */
   text-align: center;
 
   max-width: 1440px;
-  min-height: 600px;
 
   background-color: var(--title-text-color);
   background-image: linear-gradient(
@@ -577,7 +574,7 @@ height: 24px; */
 
 .cust-link:hover,
 .cust-link:focus {
-  border: 1px solid #404bbf;
+  border-color: #404bbf;
   color: #404bbf;
 }
 
@@ -631,7 +628,7 @@ height: 24px; */
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: 1px solid transparent;
+  border-color: transparent;
 }
 
 /* ------------------CARD--------------------------------- */
